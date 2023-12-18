@@ -26,9 +26,9 @@ const startServer = () => {
     }
 
     app.use(cors(
-        // {
-        //     origin: "https://campus-connect-undefined.onrender.com"
-        // }
+        {
+            origin: "https://campus-connect-undefined.onrender.com"
+        }
         )
     );
     app.use(bodyParser.urlencoded({extended: false}));
