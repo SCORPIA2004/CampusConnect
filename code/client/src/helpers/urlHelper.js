@@ -1,6 +1,7 @@
 // A list of all the routes used in the application
 
-const API_URL = "https://localhost:3000"
+const API_URL =
+  "ERR_CONNECTION_REFUSEDhttps://campus-connect-undefined-api.onrender.com";
 
 const AUTH_ROUTE = API_URL + "/auth"
 
