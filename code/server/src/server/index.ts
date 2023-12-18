@@ -25,12 +25,11 @@ const startServer = () => {
         passphrase: '3850',
     }
 
-    // app.use(cors(
-    //     {
-    //         origin: 
-    //     }
-    //     )
-    // );
+    app.use(
+      cors({
+        origin: ["*", "https://campus-connect-undefined.onrender.com"],
+      })
+    );
     app.use(bodyParser.urlencoded({extended: false}));
     app.use(bodyParser.json({limit: '50mb'}));
     app.use('/', routes);
@@ -38,9 +37,9 @@ const startServer = () => {
     const server = https.createServer(sllSettings, app)
 
     const io = new Server(server, {
-        cors: {
-            origin: "https://campus-connect-undefined.onrender.com", // Allow all origins
-        }
+      cors: ({
+        origin: ["*", "https://campus-connect-undefined.onrender.com"],
+      }),
     }); // Create a new Socket.IO instance with CORS configuration
 
     attachSocketRoutes(io);
