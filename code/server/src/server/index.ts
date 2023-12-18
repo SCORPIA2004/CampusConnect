@@ -25,7 +25,11 @@ const startServer = () => {
         passphrase: '3850',
     }
 
-    app.use(cors());
+    app.use(cors(
+        {
+            origin: "https://campus-connect-undefined.onrender.com"
+        })
+    );
     app.use(bodyParser.urlencoded({extended: false}));
     app.use(bodyParser.json({limit: '50mb'}));
     app.use('/', routes);
