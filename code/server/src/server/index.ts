@@ -19,12 +19,6 @@ import {attachSocketRoutes} from "@/src/server/socketRoutes";
 const startServer = () => {
     const app = express();
 
-    const sllSettings = {
-        key: fs.readFileSync('ssl/key.pem'),
-        cert: fs.readFileSync('ssl/cert.pem'),
-        passphrase: '3850',
-    }
-
     app.use(
       cors({
         origin: ["*", "https://campus-connect-undefined.onrender.com"],
@@ -34,7 +28,7 @@ const startServer = () => {
     app.use(bodyParser.json({limit: '50mb'}));
     app.use('/', routes);
 
-    const server = https.createServer(sllSettings, app)
+    const server = https.createServer(app)
 
     const io = new Server(server, {
       cors: ({
