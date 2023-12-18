@@ -18,6 +18,7 @@ import Chat from "@/interfaces/chatModel";
 import { Post } from "@/interfaces/postModel";
 
 const DB_URL = process.env.DB_URL || ""
+console.log("DB URL HERE: ***** ", DB_URL)
 export const client = new MongoClient(DB_URL, {
     serverApi: {
         version: ServerApiVersion.v1,
