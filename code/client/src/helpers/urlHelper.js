@@ -1,7 +1,7 @@
 // A list of all the routes used in the application
 
 const API_URL =
-  "https://campus-connect-undefined-api.onrender.com";
+  "https://campusconnectbilkent-api.onrender.com";
 
 const AUTH_ROUTE = API_URL + "/auth"
 
