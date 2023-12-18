@@ -10,7 +10,7 @@ import {AuthContext} from "./AuthProvider";
 import {io} from "socket.io-client";
 import toast from "react-hot-toast";
 
-const API_URL = "https://campus-connect-undefined-api.onrender.com";
+const API_URL = "https://campusconnect-api.onrender.com";
 let socket;
 
 /**
