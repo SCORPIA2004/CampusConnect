@@ -1,0 +1,174 @@
+
+.main-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 5px;
+}
+
+.no-posts {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    font-weight: 800;
+}
+
+.profilePage {
+    /* background-color: #121212; */
+    color: black;
+    min-height: 100vh;
+    padding: 20px;
+    margin-top: 30px; /* Moves content 10% down */
+    margin-left: 30px; /* Moves content 10% to the right */
+}
+
+.profileHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    outline: thin solid var(--main-border-color);
+}
+
+.profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px; /* Makes it circular */
+    border: 4px solid #f6f6f6;
+    margin-bottom: 10px;
+}
+
+.profileImage:hover {
+    border: 4px solid #004b95;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.changeImageButton {
+    position: absolute;
+    bottom: -50px;
+    right: -100px;
+}
+
+.profileName {
+    font-size: 24px;
+    margin-block: 5px;
+}
+
+.profileEmail {
+    margin-block: 5px;
+    font-size: 16px;
+}
+
+
+.listingSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 20px;
+}
+
+.listingCard {
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    /* make it clickable */
+    cursor: pointer;
+    outline: thin solid var(--main-border-color);
+
+
+}
+
+.listingCard:hover {
+    background-color: #ebebeb;
+    /* opacity: 0.8; */
+    outline: medium solid var(--main-border-color);
+}
+
+.listingImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: thin solid var(--main-border-color);
+}
+
+
+.listingInfo {
+    margin-bottom: 10px;
+}
+
+.listingTitle {
+    font-size: 18px;
+}
+
+.listingPrice {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(182, 3, 3); /* Red color for price */
+}
+
+.seller {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sellerImage {
+    width: auto;
+    height: auto;
+    width: 25%;
+    max-width: 25%;
+    border-radius: 50px; /* Makes it circular */
+    border: 4px solid #f6f6f6;
+    margin-bottom: 10px;
+
+}
+
+.sellerDetails {
+    width: 75%;
+    max-width: 75%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: left;
+    /* double spacing in between lines */
+    line-height: 1.5;
+    margin-right: 20px;
+
+}
+
+.iconButtonsContainer {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.post-filters-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

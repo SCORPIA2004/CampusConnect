@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@/interfaces/*": [
+        "./src/interfaces/*"
+      ],
+      "@/handlers/*": [
+        "./src/handlers/*"
+      ],
+      "@/schemas/*": [
+        "./src/validation/schemas/*"
+      ],
+      "@/validation/*": [
+        "./src/validation/*"
+      ],
+      "@/database/*": [
+        "./src/database/*"
+      ]
+    },
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true
+  }
+}

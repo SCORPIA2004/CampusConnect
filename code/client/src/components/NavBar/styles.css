@@ -1,0 +1,30 @@
+.nav-bar {
+    top: 0;
+    z-index: 999;
+    position: fixed;
+    height: 40px;
+    width: 100vw;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: var(--main-border-color) 1px solid;
+}
+
+.nav-bar-right {
+    position: absolute;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.campus-connect-logo {
+    width: 180px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1001;
+}

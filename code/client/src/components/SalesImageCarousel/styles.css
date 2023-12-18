@@ -1,0 +1,55 @@
+.sales-image-button {
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--main-border-color);
+    outline: none;
+    transition: 200ms;
+    padding: 0;
+    margin: 7px 7px 0 0;
+    width: 65px;
+    border-radius: 5px;
+}
+
+.sales-image-button.active {
+    border: 1px solid var(--logo-red);
+    scale: 105%;
+}
+
+.sales-image {
+    max-width: 63px;
+    max-height: 63px;
+    margin: 0;
+    padding: 0;
+}
+
+.sales-post-image {
+    width: 340px;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.sales-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.sales-images-carousel-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 265px;
+}
+
+.sales-images-carousel-container .react-multi-carousel-dot-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.sales-images-carousel-container .react-multi-carousel-track {
+    width: 340px;
+}

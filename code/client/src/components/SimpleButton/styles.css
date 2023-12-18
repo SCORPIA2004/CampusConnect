@@ -1,0 +1,85 @@
+.simple-button {
+  width: 100px !important;
+  height: 40px !important;
+  border-radius: 10px !important;
+  color: white !important;
+  font-family: "Inter", sans-serif !important;
+  margin-block: 15px !important;
+  /* margin-inline: 5px !important; */
+}
+
+.smallButton {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.logo-red {
+  background-color: var(--logo-red) !important;
+}
+
+.logo-blue {
+  background-color: var(--logo-blue) !important;
+}
+
+.simple-button.outlined {
+  background-color: var(--secondary-bg-color) !important;
+  transition: 200ms;
+}
+
+.simple-button.logo-red.outlined {
+  color: var(--logo-red) !important;
+  outline: 1px solid var(--logo-red) !important;
+}
+
+.simple-button.logo-red.outlined:hover {
+  color: white !important;
+  background-color: var(--logo-red) !important;
+}
+
+.simple-button.logo-blue.outlined {
+  outline: 1px solid var(--logo-blue) !important;
+}
+
+.simple-button.logo-blue.outlined:hover {
+  color: white !important;
+  background-color: var(--logo-blue) !important;
+}
+
+.simple-button.smallButton.outlined {
+  width: 40px !important;
+  height: 40px !important;
+
+  background-color: var(--secondary-bg-color) !important;
+  transition: 200ms;
+}
+
+.simple-button.smallButton.logo-red.outlined {
+  width: 40px !important;
+  height: 40px !important;
+
+  color: var(--logo-red) !important;
+  outline: 1px solid var(--logo-red) !important;
+}
+
+.simple-button.smallButton.logo-red.outlined:hover {
+  width: 40px !important;
+  height: 40px !important;
+
+  color: white !important;
+  background-color: var(--logo-red) !important;
+}
+
+.simple-button.smallButton.logo-blue.outlined {
+  width: 40px !important;
+  height: 40px !important;
+
+  outline: 1px solid var(--logo-blue) !important;
+}
+
+.simple-button.smallButton.logo-blue.outlined:hover {
+  width: 40px !important;
+  height: 40px !important;
+
+  color: white !important;
+  background-color: var(--logo-blue) !important;
+}

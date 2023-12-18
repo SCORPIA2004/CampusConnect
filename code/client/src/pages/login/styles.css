@@ -1,0 +1,43 @@
+.main-container {
+    margin-block: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container {
+    margin-top: 30px;
+    background-color: var(--secondary-bg-color);
+    border: var(--main-border-color) 1px solid;
+    border-radius: 5px;
+    padding-block: 30px;
+    width: 700px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-heading {
+    color: var(--logo-blue);
+    font-size: 70px;
+    margin-block: 50px;
+}
+
+.register-prompt {
+    color: var(--logo-red);
+    cursor: pointer;
+}
+
+.register-text {
+    margin-bottom: 30px;
+}
+
+.reset-password {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--logo-blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+

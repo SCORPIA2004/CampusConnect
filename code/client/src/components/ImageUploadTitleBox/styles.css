@@ -1,0 +1,30 @@
+.file-name-container {
+    margin-inline: 5px;
+    width: 180px;
+    max-height: 30px;
+    border: 1px solid var(--main-border-color);
+    border-radius: 5px;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-name {
+    flex-grow: 1; /* Use flex-grow to allow the content to fill the available space */
+    padding: 3px;
+    overflow: hidden;
+    white-space: nowrap; /* Prevent line breaks */
+    text-overflow: ellipsis;
+}
+
+.file-remove-button {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    position: relative;
+}
+
+.remove-icon-button:hover {
+    color: var(--logo-red);
+}

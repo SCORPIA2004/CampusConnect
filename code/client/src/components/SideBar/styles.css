@@ -1,0 +1,107 @@
+.drawer-closed{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    height: calc(100% - 51px);
+    width: 40px;
+    background-color: var(--secondary-bg-color);
+    border-right: var(--main-border-color) 1px solid;
+    border-top: var(--main-border-color) 1px solid;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.drawer-closed-top-icons {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drawer-closed-bottom-icons {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drawer-content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.drawer-content.logout {
+    color: var(--logo-red);
+}
+
+.drawer-unblurred-area {
+    width: calc(100% - 2px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-content {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid var(--main-border-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.drawer-open-content {
+    display: flex;
+    width: 100%;
+    padding-block: 10px;
+    border-bottom: var(--main-border-color) 1px solid;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.drawer-open-content.text:hover {
+    background-color: var(--main-bg-color);
+}
+
+.drawer-icon {
+    margin-inline: 10px;
+}
+
+.drawer-open-content.email {
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: var(--main-border-color) 2px solid;
+    padding-bottom: 10px;
+}
+
+.drawer-open-content.email.mobile {
+    margin-top: 30px;
+}
+
+.drawer-open-content.logout {
+    color: var(--logo-red);
+}
+
+.menu-button {
+    position: fixed;
+    top: 12px;
+    left: 10px;
+    z-index: 1000;
+}
+

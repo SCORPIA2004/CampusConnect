@@ -1,0 +1,276 @@
+.post-card {
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--main-border-color);
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    width: 500px;
+    max-width: 90%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.tag-time-containter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    color: #494949;
+    font-weight: 300;
+}
+
+.post-card.mobile {
+    width: 90%;
+}
+
+.post-header {
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-detail {
+    font-size: 10px;
+    color: #494949;
+    font-weight: 300;
+    margin-top: 1px;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post-detail.center {
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+.post-images {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-images.sales {
+    width: auto;
+}
+
+.sales-middle-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.user-detail {
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+}
+
+.role-banner {
+    margin-right: 3px;
+    background-color: var(--logo-blue);
+    border-radius: 3px;
+    font-size: 6px;
+    display: flex;
+    place-items: center;
+    color: white;
+    padding: 1px;
+    opacity: 1;
+    font-weight: 700;
+}
+
+.post-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 10px;
+}
+
+.post-title.small {
+    width: 100%;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.post-title-text {
+    width: 400px;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.post-description {
+    margin-block: 7px;
+    margin-left: 2px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-display {
+    width: 50px;
+}
+
+.post-description.sales {
+    margin: 10px;
+    font-size: 12px;
+}
+
+.sales-content {
+    margin-block: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-price {
+    max-height: 141px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--logo-red);
+    padding-inline: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.post-price.small {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.post-chat-button {
+    display: flex;
+    justify-content: center;
+}
+
+.post-actions {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-actions.borrow {
+    width: 99%;
+}
+
+.borrow-return-date {
+    color: var(--logo-red);
+}
+
+.post-actions.sales {
+    justify-content: flex-end;
+}
+
+.borrow-button-div {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.action-icon-button {
+    font-size: 17px !important;
+    color: #000000 !important;;
+    padding: 2px;
+    margin-top: 5px;
+    margin-inline: 3px;
+}
+
+.skeleton-override {
+    transform: unset !important;
+    -webkit-transition: unset !important;
+    margin-block: 10px !important;
+}
+
+.post-card-sales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--main-border-color);
+    border-radius: 5px;
+    padding: 10px 15px 3px 15px;
+    width: 170px;
+    max-width: 37%;
+    margin-top: 5px;
+    margin-inline: 4px;
+    cursor: pointer;
+    height: 250px;
+    max-height: 250px;
+}
+
+.sales-image-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    max-width: 95%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.comment-input {
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--main-border-color);
+
+    min-height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    color: #494949;
+
+    border-radius: 5px;
+
+    padding-inline: 15px;
+    padding-block: 5px;
+
+    margin-top: 15px;
+
+    width: 530px;
+
+    cursor: pointer;
+}
+
+.comment-input.mobile {
+    width: 90%;
+    max-width: 90%;
+}
+
+.comment-input-container {
+    width: 530px;
+    max-width: 90%;
+    position: relative;
+    display: flex;
+    place-items: center;
+}
+
+.comment-input-container.mobile {
+    width: 97%;
+    max-width: 97%;
+}
+

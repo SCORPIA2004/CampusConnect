@@ -1,0 +1,37 @@
+/* styles.css */
+
+input {
+    border-radius: 5px;
+    outline: none;
+    border: 1px var(--main-border-color) solid;
+    background-color: var(--main-bg-color);
+    padding: 10px;
+    width: 250px;
+    height: 25px;
+}
+
+input:focus::placeholder {
+    color: var(--logo-blue); /* Change placeholder text color to var(--logo-blue) on focus */
+}
+
+.text-input-container.focus-red input:focus::placeholder {
+    color: var(--logo-red); /* Change placeholder text color to var(--logo-blue) on focus */
+}
+
+.password-toggle-button {
+    position: absolute !important;
+    transform: translateX(-100%) translateY(34%) !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+input:focus {
+    border-color: var(--logo-blue);
+    color: var(--logo-blue);
+}
+
+.text-input-container.focus-red input:focus {
+    border-color: var(--logo-red);
+    color: var(--logo-red) !important;
+}

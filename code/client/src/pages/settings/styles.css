@@ -1,0 +1,154 @@
+.settings-outer-container {
+    margin-block: 40px;
+    margin-left: 40px;
+    width: calc(100% - 41px);
+    display: flex;
+    justify-content: center;
+}
+
+.settings-outer-container.mobile {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+}
+
+.settings-container {
+    margin-top: 30px;
+    background-color: var(--secondary-bg-color);
+    border: var(--main-border-color) 1px solid;
+    border-radius: 5px;
+    padding-block: 30px;
+    width: 900px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings-heading {
+    display: flex;
+    font-size: 22px;
+    font-weight: 550;
+    color: var(--logo-blue);
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.edit-profile-container {
+    width: 90%;
+    margin-top: 23px;
+}
+
+.user-email-text.mobile {
+    margin-top: 4px;
+}
+
+.edit-profile-heading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 450;
+    color: var(--logo-blue);
+}
+
+.account-management-container {
+    width: 90%;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-management-heading {
+    font-size: 18px;
+    font-weight: 450;
+    color: var(--logo-blue);
+}
+
+.edit-profile-heading.mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-email-text {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.edit-profile-names {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: var(--logo-blue);
+    font-size: 15px;
+    font-weight: 350;
+    display: flex;
+}
+
+.edit-profile-names.mobile {
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-first-name {
+    margin-right: 20px;
+}
+
+.edit-first-name.mobile {
+    margin: 0px
+}
+
+.edit-last-name.mobile {
+    margin-top: 10px;
+}
+
+.account-management-buttons,
+.edit-profile-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+}
+
+.edit-profile-container.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-management-buttons {
+    display: flex;
+    flex-direction: column;
+    color: var(--logo-blue);
+    font-size: 15px;
+    font-weight: 350;
+}
+
+.delete-account-button,
+.reset-password-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.delete-popup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.delete-popup-container.mobile {
+    margin-top: 29px;
+}
+
+.delete-popup-prompt {
+    color: var(--logo-red);
+    font-weight: 300;
+    text-align: center;
+}

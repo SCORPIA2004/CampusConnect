@@ -1,0 +1,119 @@
+.message {
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--main-border-color);
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    margin-block: 5px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    word-wrap: break-word;
+    max-width: 90%;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+}
+
+.message.right {
+    background-color: var(--main-border-color);
+    border-top-left-radius: 0;
+    justify-content: start;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+.message.left {
+    border-top-right-radius: 0;
+    justify-content: end;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.message.borderless {
+    border-radius: 10px;
+}
+
+.time {
+    position: absolute;
+    font-size: 8px;
+    opacity: 0.7;
+    top: 5px;
+}
+
+.time.right {
+    right: 5px;
+}
+
+.time.left {
+    left: 5px;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    max-width: 98%;
+    overflow-y: auto;
+    font-size: 18px;
+    background-color: #ececec;
+    border: 1px solid var(--main-border-color);
+    border-radius: 5px;
+}
+
+.avatar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatar-container-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-bg-color);
+    border-bottom: 2px solid var(--main-border-color);
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+
+.chat-slider {
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+.chat-control {
+    background-color: var(--secondary-bg-color);
+    border-top: 2px solid var(--main-border-color);
+    border-radius: 0 0 10px 10px;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+.text-message {
+    max-width: 90%;
+    display: block;
+    flex-direction: column;
+}
+
+.text-message.right {
+    align-items: flex-end;
+}
+
+.text-message.left {
+    align-items: flex-start;
+}
+
+.text-image {
+    width: 100%;
+}
+
+.chat-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--logo-blue);
+}

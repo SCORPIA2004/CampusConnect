@@ -1,0 +1,19 @@
+.images-carousel {
+    display: flex;
+    flex-direction: column;
+    max-height: 450px;
+}
+
+.post-image {
+    max-height: 450px;
+    object-fit: contain;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+}

@@ -1,0 +1,8 @@
+.user-tag {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    font-size: 10px;
+    font-weight: 300;
+    color: #494949;
+}

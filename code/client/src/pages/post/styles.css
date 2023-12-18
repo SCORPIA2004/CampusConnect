@@ -1,0 +1,14 @@
+.main-container {
+    margin-top: 50px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.comment-feed-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}

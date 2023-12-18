@@ -1,0 +1,35 @@
+:root {
+    --main-bg-color: #f1f1f1;
+    --secondary-bg-color: #f6f6f6;
+    --main-border-color: #dedede;
+    --logo-blue: #004b95;
+    --logo-red: #e63130;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: calc(100% - 30px);
+    font-family: "Inter", sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+#root {
+    height: 100%
+}
+
+input {
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* remove scrollbar from whole application and make scroll animation smooth*/
+body::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+}

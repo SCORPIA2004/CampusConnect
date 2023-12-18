@@ -1,0 +1,1 @@
+// will contain css for how to postion forum posts, getters and setters for all the posts and performable operations
