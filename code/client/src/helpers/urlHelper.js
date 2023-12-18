@@ -1,7 +1,6 @@
 // A list of all the routes used in the application
 
-const API_URL =
-  "https://1fe3-139-179-211-243.ngrok-free.app";
+const API_URL = process.env.REACT_APP_API_URL;
 
 const AUTH_ROUTE = API_URL + "/auth"
 

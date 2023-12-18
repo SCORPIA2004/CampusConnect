@@ -4,7 +4,7 @@
  * @returns {string} The role associated with the email domain.
  */
 export const getRoleFromEmail = (email) => {
-    const domain = email.split('@')[1].toLowerCase();
+    const domain = email?.split('@')[1].toLowerCase();
 
     if (domain === 'ug.bilkent.edu.tr') {
         return 'UG';
@@ -20,7 +20,7 @@ export const getRoleFromEmail = (email) => {
 }
 
 export const getNameFromEmail = (email) => {
-    const domain = email.split('@')[0].toLowerCase();
+    const domain = email?.split('@')[0].toLowerCase();
 
     return domain
 }
