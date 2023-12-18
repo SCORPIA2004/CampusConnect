@@ -24,6 +24,14 @@ const ChatsPage = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+    const chat = chats.filter(
+        (chat) => chat.user.email === currentChat?.user.email
+    )[0];
+    console.log(chat);
+    setCurrentChat(chat);
+    }, [chats]);
+
+    useEffect(() => {
         const email = window.location.href.split("/")[4];
         if (email) {
             setChat(email);

@@ -12,7 +12,6 @@
 }
 
 .buttonActive {
-    /* background-color: #ff00003a  !important; */
     background-color: var(--secondary-bg-color) !important;
     color: #000000 !important;
     border: 2px solid #000000 !important;

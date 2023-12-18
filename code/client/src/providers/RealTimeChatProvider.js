@@ -29,6 +29,12 @@ const RealTimeChatProvider = ({children}) => {
     const {socket, isConnected} = useSocket()
     const {email, isLoggedIn} = useAuth()
 
+    useEffect(() => {
+    console.log("chats", chats);
+    }, [chats]);
+
+
+
     /**
      * Sends a message to the specified recipient.
      * @param {Object} chat - The chat message to be sent.

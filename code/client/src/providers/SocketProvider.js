@@ -39,7 +39,6 @@ const SocketProvider = ({children}) => {
             socket.on('connect', () => {
                 setIsConnected(true)
                 socket.on('disconnect', () => {
-                    toast.error('Disconnected from socket server')
                     setIsConnected(false)
                 })
             })
