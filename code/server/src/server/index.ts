@@ -10,7 +10,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import routes from './routes';
-import * as https from 'https';
+import * as http from 'http';
 import * as fs from 'fs'
 import {startMailService} from "@/src/mail";
 import { Server } from 'socket.io';
@@ -34,7 +34,7 @@ const startServer = () => {
     app.use(bodyParser.json({limit: '50mb'}));
     app.use('/', routes);
 
-    const server = https.createServer(app)
+    const server = http.createServer(app)
 
     const io = new Server(server, {
       cors: ({
