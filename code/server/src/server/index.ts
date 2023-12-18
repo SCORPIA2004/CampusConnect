@@ -21,7 +21,13 @@ const startServer = () => {
 
     app.use(
       cors({
-        origin: ["*", "https://campus-connect-undefined.onrender.com"],
+        origin: [
+          "*",
+          "https://campus-connect-undefined.onrender.com",
+          "https://100.20.92.101:3000",
+          "https://44.225.181.72:3000",
+          "https://44.227.217.144:3000",
+        ],
       })
     );
     app.use(bodyParser.urlencoded({extended: false}));
@@ -32,7 +38,13 @@ const startServer = () => {
 
     const io = new Server(server, {
       cors: ({
-        origin: ["*", "https://campus-connect-undefined.onrender.com"],
+        origin: [
+          "*",
+          "https://campus-connect-undefined.onrender.com",
+          "https://100.20.92.101:3000",
+          "https://44.225.181.72:3000",
+          "https://44.227.217.144:3000",
+        ],
       }),
     }); // Create a new Socket.IO instance with CORS configuration
 
