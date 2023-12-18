@@ -15,13 +15,18 @@ import * as fs from 'fs'
 import {startMailService} from "@/src/mail";
 import { Server } from 'socket.io';
 import {attachSocketRoutes} from "@/src/server/socketRoutes";
+import process from "process";
 
 const startServer = () => {
     const app = express();
+    const CLIENT_URL = process.env.CLIENT_URL || ""
 
+    if (CLIENT_URL === "") {
+        console.log("CLIENT_URL is not set. Please set CLIENT_URL in the .env file.")
+    }
     app.use(
       cors({
-        origin: ["*", "https://campus-connect-undefined.onrender.com"],
+        origin: ["*", CLIENT_URL],
       })
     );
     app.use(bodyParser.urlencoded({extended: false}));
@@ -32,7 +37,7 @@ const startServer = () => {
 
     const io = new Server(server, {
       cors: ({
-        origin: ["*", "https://campus-connect-undefined.onrender.com"],
+        origin: ["*", CLIENT_URL],
       }),
     }); // Create a new Socket.IO instance with CORS configuration
 
