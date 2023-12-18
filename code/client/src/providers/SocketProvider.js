@@ -10,7 +10,7 @@ import {AuthContext} from "./AuthProvider";
 import {io} from "socket.io-client";
 import toast from "react-hot-toast";
 
-const API_URL = "https://campusconnectbilkent-api.onrender.com";
+const API_URL = "https://1fe3-139-179-211-243.ngrok-free.app/";
 let socket;
 
 /**
