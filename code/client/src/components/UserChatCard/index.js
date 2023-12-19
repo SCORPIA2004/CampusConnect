@@ -19,21 +19,36 @@ import ProfileBadge from "../ProfileBadge";
 
 const UserChatCard = ({firstName, lastName, email, lastMessage, isRead = false , onClick, isActive}) => {
     return (
-        <div className="user-card" onClick={onClick}>
-            <div className="name-container">
-                <ProfileBadge firstName={firstName} lastName={lastName} email={email} isActive={isActive}/>
-                <div className={"name"}>
-                    {firstName} {lastName}
-                    <div className={"date"}>
-                        {getTimeSince(lastMessage.dateSent)}
-                    </div>
-                </div>
-            </div>
-            <div className="last-message">
-                <div style={{wordWrap: "break-word", width: 300, textAlign: "right", marginRight: 10}}>{lastMessage.text}</div>
-                {/*{!isRead && <div className={"red-dot"}/>}*/}
-            </div>
+      <div className="user-card" onClick={onClick}>
+        <div className="name-container">
+          <ProfileBadge
+            firstName={firstName}
+            lastName={lastName}
+            email={email}
+            isActive={isActive}
+          />
+          <div className={"name"}>
+            {firstName} {lastName}
+            <div className={"date"}>{getTimeSince(lastMessage.dateSent)}</div>
+          </div>
         </div>
+        <div className="last-message">
+          <div
+            style={{
+              maxWidth: "50%",
+              maxHeight: "80px",
+              overflow: "hidden",
+              whiteSpace: "normal",
+              textOverflow: "ellipsis",
+              textAlign: "right",
+              marginRight: 10,
+            }}
+          >
+            {lastMessage.text}
+          </div>
+          {/*{!isRead && <div className={"red-dot"}/>}*/}
+        </div>
+      </div>
     );
 }
 

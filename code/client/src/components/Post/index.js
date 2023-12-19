@@ -24,7 +24,7 @@ const Post = ({post, isExpanded, reloadPosts, }) => {
     const handleSharePress = (event) => {
         event.stopPropagation();
         const {title, _id} = post;
-        const url = `${process.env.REACT_APP_API_URL}/post/${_id}`;
+        const url = `${process.env.REACT_APP_URL}/post/${_id}`;
 
         navigator.share?.({title: 'Check this post out!', text: title, url})
             .then(() => toast.success('Post shared successfully'))

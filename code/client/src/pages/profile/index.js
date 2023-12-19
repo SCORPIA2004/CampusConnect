@@ -88,7 +88,7 @@ const ProfilePage = () => {
     }
 
 
-    if (user) return (<div className="profilePage">
+    if (user) return (<div className={`profilePage ${isMobile ? "mobile" : ""}`}>
         <div className="profileHeader">
             <ProfileBadge firstName={user.firstName} lastName={user.lastName} email={user.email}
                           isActive={user.isActive} size={'lg'}/>

@@ -30,7 +30,7 @@ const LostPost = ({ post, isExpanded, reloadPosts, openEditMenu }) => {
     const shareData = {
       title: "Check this post out!",
       text: post.title,
-      url: `${process.env.REACT_APP_API_URL}/post/${post._id}`,
+      url: `${process.env.REACT_APP_URL}/post/${post._id}`,
     };
 
     if (navigator.share) {

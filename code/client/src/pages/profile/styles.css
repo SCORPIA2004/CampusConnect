@@ -28,6 +28,11 @@
     margin-left: 30px; /* Moves content 10% to the right */
 }
 
+.profilePage.mobile {
+    margin-left: 0px;
+}
+
+
 .profileHeader {
     display: flex;
     flex-direction: column;

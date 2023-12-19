@@ -18,7 +18,7 @@ import TextInput from "../TextInput";
 import SimpleButton from "../SimpleButton";
 import Message from "./Message";
 import "./styles.css"
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import UserTag from "../UserTag";
 import CloseButton from "../CloseButton";
 import {IconButton} from "@mui/material";
@@ -36,7 +36,12 @@ const Chat = ({chat, handleSendMessage, handleClose}) => {
         image: undefined
     });
     const [selectedFileName, setSelectedFileName] = useState('');
+    const chatSliderRef = useRef(null);
 
+    useEffect(() => {
+      // Scroll to the bottom when the component mounts or when chat changes
+      chatSliderRef.current.scrollTop = chatSliderRef.current.scrollHeight;
+    }, [chat]);
 
     const handleFileChange = (e) => {
         const file = e.target.files[0];
@@ -82,56 +87,67 @@ const Chat = ({chat, handleSendMessage, handleClose}) => {
 
 
     return (
-        <div className={"chat-container"}>
-            <div className={"avatar-container-main"}>
-                <div className={"avatar-container"}>
-                    <ProfileBadge firstName={chat?.user?.firstName} lastName={chat?.user?.lastName} email={chat?.user?.email}
-                                  isActive={chat?.user?.isActive}/>
-                    <div className={"name"}>
-                        {chat?.user?.firstName} {chat?.user?.lastName}
-                        <UserTag isAnonymous={false} creatorEmail={chat?.user?.email}/>
-                    </div>
-                </div>
-                <CloseButton onClick={handleClose}/>
+      <div className={"chat-container"}>
+        <div className={"avatar-container-main"}>
+          <div className={"avatar-container"}>
+            <ProfileBadge
+              firstName={chat?.user?.firstName}
+              lastName={chat?.user?.lastName}
+              email={chat?.user?.email}
+              isActive={chat?.user?.isActive}
+            />
+            <div className={"name"}>
+              {chat?.user?.firstName} {chat?.user?.lastName}
+              <UserTag isAnonymous={false} creatorEmail={chat?.user?.email} />
             </div>
-            <div className={"chat-slider"}>
-                {
-                    chat?.messages?.map((message, i) => {
-                        return <Message message={message}
-                                        isConsecutive={chat.messages[i - 1]?.isSender === message?.isSender}/>
-                    })
-                }
-            </div>
-            <div className={"chat-control"}>
-                <div className={"chat-button-container"}>
-                    <IconButton onClick={handleSendPress}>
-                        <RiSendPlaneFill size={15}/>
-                    </IconButton>
-                    <IconButton>
-                        <label htmlFor="file-input">
-                            <FaPaperclip size={15}/>
-                        </label>
-                        <input
-                            id="file-input"
-                            type="file"
-                            accept="image/*"
-                            onChange={handleFileChange}
-                            style={{display: "none"}}
-                        />
-                    </IconButton>
-                    {selectedFileName &&
-                        <ImageUploadTitleBox fileName={selectedFileName} removeFile={handleRemoveFile}/>}
-                </div>
-                <TextInput
-                    value={message.text}
-                    placeholder={"Message"}
-                    onChange={handleTextChange}
-                    style={{width: "95%"}}
-                    onKeyPress={handleKeyPress}
-                />
-            </div>
+          </div>
+          <CloseButton onClick={handleClose} />
         </div>
-    )
+        <div className={"chat-slider"} ref={chatSliderRef}>
+          {chat?.messages?.map((message, i) => (
+            <Message
+              key={i}
+              message={message}
+              isConsecutive={
+                chat.messages[i - 1]?.isSender === message?.isSender
+              }
+            />
+          ))}{" "}
+        </div>
+        <div className={"chat-control"}>
+          <div className={"chat-button-container"}>
+            <IconButton onClick={handleSendPress}>
+              <RiSendPlaneFill size={15} />
+            </IconButton>
+            <IconButton>
+              <label htmlFor="file-input">
+                <FaPaperclip size={15} />
+              </label>
+              <input
+                id="file-input"
+                type="file"
+                accept="image/*"
+                onChange={handleFileChange}
+                style={{ display: "none" }}
+              />
+            </IconButton>
+            {selectedFileName && (
+              <ImageUploadTitleBox
+                fileName={selectedFileName}
+                removeFile={handleRemoveFile}
+              />
+            )}
+          </div>
+          <TextInput
+            value={message.text}
+            placeholder={"Message"}
+            onChange={handleTextChange}
+            style={{ width: "95%" }}
+            onKeyPress={handleKeyPress}
+          />
+        </div>
+      </div>
+    );
 }
 
 export default Chat;
