@@ -18,9 +18,9 @@ export let mailTransporter: nodemailer.Transporter<SentMessageInfo>;
  */
 export const startMailService = () => {
     mailTransporter = nodemailer.createTransport({
-        service: 'hotmail',
+        service: 'gmail',
         auth: {
-            user: 'bilkent.campus.connect@hotmail.com',
+            user: 'bilkent.campus.connect2@hotmail.com',
             pass: 'BilkentCampusConnect$$'
         }
     });
