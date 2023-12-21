@@ -3,17 +3,55 @@
   <h1 align="center">Your Central Hub for Secure Campus Interactions and Transactions</h1>
 </div>
 
-
-
-
 https://github.com/SCORPIA2004/CampusConnect/assets/62741526/7f17e798-76e5-4952-823b-f5e372686766
 
+## Deliverables:
+<p><i>Use CTRL + click to open links in new tab. </i></p>
+<table align="center">
+    <th>D#</th>
+    <th>Description</th>
+    <th>Link</th>
+  <tr>
+    <td>D1</td>
+    <td>Use Case / NFR / Tech Stack</td>
+    <td><a href="D1">Link</a></td>
+  </tr>
+  <tr>
+    <td>D2</td>
+    <td>Sequence/Activity/Class/Sequence Diagrams/Mockups</td>
+    <td><a href="D2">Link</a></td>
+  </tr>
+  <tr>
+    <td>D3</td>
+    <td>Early Prototype</td>
+    <td><a href="D3">Link</a></td>
+  </tr>
+  <tr>
+    <td>D4</td>
+    <td>Design Goals, High Level arch.</td>
+    <td><a href="D4">Link</a></td>
+  </tr>
+  <tr>
+    <td>D5</td>
+    <td>Class Diagram. Design Patterns</td>
+    <td><a href="D5">Link</a></td>
+  </tr>
+  <tr>
+    <td>D6</td>
+    <td>User Manual + Promo Video</td>
+    <td><a href="D6">Link</a></td>
+  </tr>
+  <tr>
+    <td>D7</td>
+    <td>WIP</td>
+    <td><a href="D7">Link</a></td>
+  </tr>
+</table>
 
 
 
-<!--
-<a href="https://youtu.be/J5G0Qc4Uwq0">![Thumbnail](https://github.com/CS319-23-FA/S2T9-Undefined/assets/62741526/231f3713-9f8a-4715-99da-e049b1a09729)</a>
--->
+### 📊 [Track our progress here](https://docs.google.com/document/d/1898wQBFwcTYj7oKlt3NTa2m95W4ETibqd-PKDdmIz5g/edit?usp=sharing)
+
 
 ## 🌟 Motivation
 
@@ -77,50 +115,3 @@ the platform and bolstering moderation and safety on the Bilkent platform.
   </tbody>
 </table>
 
-
-## Deliverables:
-<p><i>Use CTRL + click to open links in new tab. </i></p>
-<table align="center">
-    <th>D#</th>
-    <th>Description</th>
-    <th>Link</th>
-  <tr>
-    <td>D1</td>
-    <td>Use Case / NFR / Tech Stack</td>
-    <td><a href="D1">Link</a></td>
-  </tr>
-  <tr>
-    <td>D2</td>
-    <td>Sequence/Activity/Class/Sequence Diagrams/Mockups</td>
-    <td><a href="D2">Link</a></td>
-  </tr>
-  <tr>
-    <td>D3</td>
-    <td>Early Prototype</td>
-    <td><a href="D3">Link</a></td>
-  </tr>
-  <tr>
-    <td>D4</td>
-    <td>Design Goals, High Level arch.</td>
-    <td><a href="D4">Link</a></td>
-  </tr>
-  <tr>
-    <td>D5</td>
-    <td>Class Diagram. Design Patterns</td>
-    <td><a href="D5">Link</a></td>
-  </tr>
-  <tr>
-    <td>D6</td>
-    <td>User Manual + Promo Video</td>
-    <td><a href="D6">Link</a></td>
-  </tr>
-  <tr>
-    <td>D7</td>
-    <td>WIP</td>
-    <td><a href="D7">Link</a></td>
-  </tr>
-</table>
-
-
-
-### 📊 [Track our progress here](https://docs.google.com/document/d/1898wQBFwcTYj7oKlt3NTa2m95W4ETibqd-PKDdmIz5g/edit?usp=sharing)
