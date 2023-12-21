@@ -14,37 +14,37 @@ https://github.com/SCORPIA2004/CampusConnect/assets/62741526/7f17e798-76e5-4952-
   <tr>
     <td>D1</td>
     <td>Use Case / NFR / Tech Stack</td>
-    <td><a href="D1">Link</a></td>
+    <td><a href="Deliverables/D1">Link</a></td>
   </tr>
   <tr>
     <td>D2</td>
     <td>Sequence/Activity/Class/Sequence Diagrams/Mockups</td>
-    <td><a href="D2">Link</a></td>
+    <td><a href="Deliverables/D2">Link</a></td>
   </tr>
   <tr>
     <td>D3</td>
     <td>Early Prototype</td>
-    <td><a href="D3">Link</a></td>
+    <td><a href="Deliverables/D3">Link</a></td>
   </tr>
   <tr>
     <td>D4</td>
     <td>Design Goals, High Level arch.</td>
-    <td><a href="D4">Link</a></td>
+    <td><a href="Deliverables/D4">Link</a></td>
   </tr>
   <tr>
     <td>D5</td>
     <td>Class Diagram. Design Patterns</td>
-    <td><a href="D5">Link</a></td>
+    <td><a href="Deliverables/D5">Link</a></td>
   </tr>
   <tr>
     <td>D6</td>
     <td>User Manual + Promo Video</td>
-    <td><a href="D6">Link</a></td>
+    <td><a href="Deliverables/D6">Link</a></td>
   </tr>
   <tr>
     <td>D7</td>
     <td>WIP</td>
-    <td><a href="D7">Link</a></td>
+    <td><a href="Deliverables/D7">Link</a></td>
   </tr>
 </table>
 
