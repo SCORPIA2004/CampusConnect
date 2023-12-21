@@ -3,7 +3,17 @@
   <h1 align="center">Your Central Hub for Secure Campus Interactions and Transactions</h1>
 </div>
 
+
+
+
+https://github.com/SCORPIA2004/CampusConnect/assets/62741526/7f17e798-76e5-4952-823b-f5e372686766
+
+
+
+
+<!--
 <a href="https://youtu.be/J5G0Qc4Uwq0">![Thumbnail](https://github.com/CS319-23-FA/S2T9-Undefined/assets/62741526/231f3713-9f8a-4715-99da-e049b1a09729)</a>
+-->
 
 ## Deliverables:
 <p><i>Use CTRL + click to open links in new tab. </i></p>
