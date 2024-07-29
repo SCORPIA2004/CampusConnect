@@ -5,6 +5,12 @@
 
 https://github.com/SCORPIA2004/CampusConnect/assets/62741526/7f17e798-76e5-4952-823b-f5e372686766
 
+## How to run:
+<i>CTRL + left click on links</i>
+1. Run the [web service](https://campus-connect-undefined-api.onrender.com/) in a new tab: 
+2. Wait for the webpage to display "ok!"
+3. Then open the Campus Connect website in another new tab: [CampusConnect](https://campus-connect-undefined.onrender.com/)
+
 ## Deliverables:
 <p><i>Use CTRL + click to open links in new tab. </i></p>
 <table align="center">
