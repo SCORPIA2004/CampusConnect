@@ -7,3 +7,5 @@ code/client/.idea
 code/server/.idea
 code/server/node_modules
 code/server/package-lock.json
+config.bat
+node_modules
